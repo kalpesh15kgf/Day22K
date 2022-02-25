@@ -1,0 +1,29 @@
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+public class IteratorDemo1 {
+	void Display(List<String> list) {
+		Iterator<String> kj = list.iterator();
+		while(kj.hasNext()) {
+			System.out.println("The Element is:- " +kj.next());
+		}
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> kj = new LinkedList<>();
+		kj.add("HEY");
+		kj.add("GOOD");
+		kj.add("MORNING");
+		kj.add("HAVE");
+		kj.add("NICE");
+		kj.add("DAY");
+		System.out.println("The Element is:- " +kj);
+		
+		IteratorDemo1 jk = new IteratorDemo1();
+		jk.Display(kj);
+		
+		}
+
+	
+
+}
